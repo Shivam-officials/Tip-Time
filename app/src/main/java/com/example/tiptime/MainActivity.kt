@@ -21,10 +21,11 @@ class MainActivity : AppCompatActivity() {
         // onClickListener of calculateButton
         binding.calculateButton.setOnClickListener { calculateTip() }
 
+        //onKeyListener for hiding the keyboard after hitting enter on costOfServiceEditText view
         binding.costOfServiceEditText.setOnKeyListener { view, keyCode, _ -> handleKeyEvent(view,keyCode) }
     }
 
-    /*
+    /**
     function for calculating the tip
      */
     private fun calculateTip() {
@@ -55,7 +56,7 @@ class MainActivity : AppCompatActivity() {
         displayTip(tip)
     }
 
-    /*
+    /**
     function for displaying test after formatting the tip in currency format
      */
     private fun displayTip(tip:Double){
