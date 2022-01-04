@@ -15,6 +15,8 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        //inflate the layout xml file and return the object instance named binding
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
